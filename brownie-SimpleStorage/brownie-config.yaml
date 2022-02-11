@@ -1,0 +1,4 @@
+# This tells Brownie that, whene running a scrip, check the file .env for variables.
+dotenv: .env
+wallets:
+  from_key: ${PRIVATE_KEY} # Get private key from .env file.
