@@ -211,18 +211,18 @@ Always check the latest version of the documentation!
 
 ## 11 February, 2022
 
--Lesson 5: Brownie Simple Storage
--Lesson 6: Brownie Fund Me
--Lesson 7: SmartContract Lottery
+- Lesson 5: Brownie Simple Storage
+- Lesson 6: Brownie Fund Me
+- Lesson 7: SmartContract Lottery
 
 ## 12 February
 
--Lesson 8: Chainlink Mix
--Lesson 9: ERC20s, EIPs, and Token Standards
--Lesson 10: Defi & Aave
--Lesson 11: NFTs
+- Lesson 8: Chainlink Mix
+- Lesson 9: ERC20s, EIPs, and Token Standards
+- Lesson 10: Defi & Aave
+- Lesson 11: NFTs
 
 ## 13 February
 
--Lesson 12: Upgrades
--Lesson 13: Full Stack Defi
+- Lesson 12: Upgrades
+- Lesson 13: Full Stack Defi
