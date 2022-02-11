@@ -4,7 +4,7 @@
 
 Inspired by https://www.youtube.com/watch?v=M576WGiDBdQ & https://github.com/smartcontractkit/full-blockchain-solidity-course-py
 
-# Lesson 1: [Simple Storage Contract](https://github.com/rsaSantos/solidity-learning/tree/main/basic-solidity)
+# Lesson 1: [Simple Storage Contract](https://www.youtube.com/watch?v=M576WGiDBdQ&t=5460s)
 
 💻 Code: https://github.com/rsaSantos/solidity-learning/tree/main/basic-solidity
 
@@ -46,7 +46,7 @@ Always check the latest version of the documentation!
 - Interacting with Deployed Contracts
 - The EVM
 
-# Lesson 2: [Storage Factory](https://github.com/rsaSantos/solidity-learning/tree/main/basic-solidity)
+# Lesson 2: [Storage Factory](https://www.youtube.com/watch?v=M576WGiDBdQ&t=7772s)
 
 💻 Code: https://github.com/rsaSantos/solidity-learning/tree/main/basic-solidity
 
@@ -58,7 +58,7 @@ Always check the latest version of the documentation!
 - Interact With a Deployed Contract
 - Recap
 
-# Lesson 3: [Fund Me](https://github.com/rsaSantos/solidity-learning/tree/main/fund-me-contract)
+# Lesson 3: [Fund Me](https://www.youtube.com/watch?v=M576WGiDBdQ&t=8795s)
 
 💻 Code: https://github.com/rsaSantos/solidity-learning/tree/main/fund-me-contract
 
@@ -115,7 +115,7 @@ Always check the latest version of the documentation!
 - Forcing a Transaction
 - Recap
 
-# Lesson 4: [Web3.py Simple Storage](https://github.com/rsaSantos/solidity-learning/tree/main/Web3.py)
+# Lesson 4: [Web3.py Simple Storage](https://www.youtube.com/watch?v=M576WGiDBdQ&t=12408s)
 
 💻 Code: https://github.com/rsaSantos/solidity-learning/tree/main/Web3.py
 
@@ -206,3 +206,23 @@ Always check the latest version of the documentation!
 - Using Infura RPC URL / HTTP Provider
 - [Chain Ids](https://chainlist.org/)
 - Wow this seems like a lot of work... Is there a better way?
+
+# Coming next
+
+## 11 February, 2022
+
+Lesson 5: Brownie Simple Storage
+Lesson 6: Brownie Fund Me
+Lesson 7: SmartContract Lottery
+
+## 12 February
+
+Lesson 8: Chainlink Mix
+Lesson 9: ERC20s, EIPs, and Token Standards
+Lesson 10: Defi & Aave
+Lesson 11: NFTs
+
+## 13 February
+
+Lesson 12: Upgrades
+Lesson 13: Full Stack Defi
