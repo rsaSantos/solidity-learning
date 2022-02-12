@@ -207,13 +207,116 @@ Always check the latest version of the documentation!
 - [Chain Ids](https://chainlist.org/)
 - Wow this seems like a lot of work... Is there a better way?
 
+# Lesson 5: [Brownie Simple Storage](https://www.youtube.com/watch?v=M576WGiDBdQ&t=16075s)
+💻 Code: https://github.com/rsaSantos/solidity-learning/tree/main/brownie-simple-storage
+### Brownie Introduction
+- Some Users:
+  - https://yearn.finance/
+  - https://curve.fi/
+  - https://badger.finance/
+### Installing Brownie
+- [Installing Brownie](https://eth-brownie.readthedocs.io/en/stable/install.html)
+  - Install pipx
+  - pipx install eth-brownie
+  - Testing Successful Install
+### Brownie Simple Storage Project
+- A new Brownie project with `brownie init`
+  - Project Basic Explanation
+- Adding `SimpleStorage.sol` to the `contracts` folder
+- Compiling with `brownie compile`
+- Brownie deploy script
+  - `def main` is brownie's entry point
+- brownie defaults to a `development` `ganache` chain that it creates
+- Placing functions outside of the `main` function
+- brownie `accounts`
+  - 3 Ways to Add Accounts
+    1. `accounts[0]`: Brownie's "default" ganache accounts
+       - Only works for local ganache 
+    2. `accounts.load("...")`: Brownie's encrypted command line (MOST SECURE)
+       - Run `brownie accounts new <name>` and enter your private key and a password
+    3. `accounts.add(config["wallets"]["from_key"])`: Storing Private Keys as an environment variable, and pulling from our `brownie-config.yaml`
+        - You'll need to add `dotenv: .env` to your `brownie-config.yaml` and have a `.env` file
+- Importing a Contract
+- Contract.Deploy
+- View Function Call in Brownie
+- State-Changing Function Call in Brownie / Contract Interaction
+- `transaction.wait(1)`
+### Testing Basics
+- `test_simple_storage.py`
+- Arrange, Act, Assert
+- [`assert`](https://docs.pytest.org/en/6.2.x/assert.html)
+- `brownie test`
+- `test_updating_storage`
+- [Pytest / Brownie Test Tips](https://docs.pytest.org/en/6.2.x/)
+- Deploy to a Testnet
+- `brownie networks list`
+- Development vs Ethereum
+  - Development is temporary
+  - Ethereum networks persist
+- RPC URL / HTTP Provider in Brownie
+- The network flag
+  - `list index out of range`
+- `get_account()`
+- `networks.show_active()`
+- build/deployments
+- Accessing previous deployments
+- Interacting with contracts deployed in our brownie project
+### [Brownie console]
+- `brownie console`
+
+# Lesson 6: [Brownie Fund Me](https://www.youtube.com/watch?v=M576WGiDBdQ&t=18394s)
+💻 Code: https://github.com/rsaSantos/solidity-learning/tree/main/brownie-fund-me
+
+### Introduction
+- Setup
+### Dependencies, Deploying, and Networks
+- Dependencies
+- [chainlink-brownie-contracts](https://github.com/smartcontractkit/chainlink-brownie-contracts)
+- remappings
+- Deploy Script (V1)
+- `helpful_scripts.py`
+- `__init__.py`
+- Deploy to Rinkeby
+- Contract Verification (`publish_source`)
+  - The Manual Way
+    - "Flattening"
+  - The Programatic Way
+    - Getting an [Etherscan API Key](https://etherscan.io/apis)
+    - `ETHERSCAN_TOKEN`
+  - Interacting with Etherscan
+- Deploying to Local Chains
+- Introduction to Mocking 
+- Constructor Parameters
+- `networks` in our `brownie-config.yaml`
+- Copying [Mock Contracts from chainlink-mix](https://github.com/smartcontractkit/chainlink-mix)
+- Deploying and using our mock
+- Refactoring
+- Deploying to a persistent ganache
+- brownie attach
+- Adding a persistent brownie network
+- resetting a network build
+### Funding and Withdrawing Python Scripts
+- Whoops! Let's fix an issue...
+- Fund Script
+- Withdraw Script
+### Testing across networks
+- `test_can_fund_and_withdraw`
+- default networks
+- pytest `pip install pytest`
+- pytest.skip
+- brownie exceptions
+- `mainnet-fork`
+- Custom mainnet fork
+- Adding a development brownie network
+  - `brownie networks add development mainnet-fork-dev cmd=ganache-cli host=http://127.0.0.1 fork='https://infura.io/v3/$WEB3_INFURA_PROJECT_ID' accounts=10 mnemonic=brownie port=8545`
+- [Alchemy](https://www.alchemy.com/)
+- `brownie test --network mainnet-fork`
+- brownie ganache vs local ganache vs mainnet-fork vs testnet...
+
 # Coming next
 
 ## 11 February, 2022
-
-- Lesson 5: Brownie Simple Storage
-- Lesson 6: Brownie Fund Me
-- Lesson 7: SmartContract Lottery
+- Lesson 7: SmartContract Lottery (**delayed**)
 
 ## 12 February
 
